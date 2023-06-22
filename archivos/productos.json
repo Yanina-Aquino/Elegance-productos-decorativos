@@ -1,0 +1,65 @@
+[
+    {
+    "id": 1,
+    "nombre": "Almohadon",
+    "descripcion": "Suave y colorido, ideal para sofás y camas.",
+    "precio": "2000",
+    "imagenURL": "almohada"
+    },
+    {
+    "id": 2,
+    "nombre": "Cuadro",
+    "descripcion": "Hermoso cuadro artístico enmarcado.",
+    "precio": 5000,
+    "imagenURL": "cuadro"
+    },
+    {
+    "id": 3,
+    "nombre": "Jarra",
+    "descripcion": "Elegante jarrón decorativo de cerámica.",
+    "precio": 3000,
+    "imagenURL": "jarra"
+    },
+    {
+    "id": 4,
+    "nombre": "Alfombra",
+    "descripcion": "Lujosa alfombra de área suave, ideal para decorar.",
+    "precio": 8000,
+    "imagenURL": "alfombra"
+    },
+    {
+    "id": 5,
+    "nombre": "Cortinas",
+    "descripcion": "Cortinas densas que bloquean la luz y añaden estilo.",
+    "precio": 4000,
+    "imagenURL": "cortinas"
+    },
+    {
+    "id": 6,
+    "nombre": "Espejo",
+    "descripcion": "Espejo elegante y funcional para ampliar el espacio.",
+    "precio": 6000,
+    "imagenURL": "espejo"
+    },
+    {
+    "id": 7,
+    "nombre": "Reloj de pared",
+    "descripcion": "Este reloj de pared no solo es funcional, también es una pieza de arte en sí mismo. ",
+    "precio": 1500,
+    "imagenURL": "reloj"
+    },
+    {
+    "id": 8,
+    "nombre": "Mesa",
+    "descripcion": "Mesa pequeña y versátil para colocar al lado del sofá o la cama.",
+    "precio": 4500,
+    "imagenURL": "mesa"
+    },
+    {
+    "id": 9,
+    "nombre": "Lámpara colgante",
+    "descripcion": "Lámpara moderna y elegante que ilumina el espacio con estilo.",
+    "precio": 3500,
+    "imagenURL": "lampara"
+    }
+]

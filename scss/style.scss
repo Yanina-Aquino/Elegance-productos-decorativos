@@ -1,0 +1,551 @@
+// Variables de colores
+$color-text: #BF8A7E;
+$color-header: #8C655D;
+$color-white: WHITE;
+$color-bg: #D9CAC5;
+
+// Variables de tamaños
+$font-size-h2: 1.2rem;
+$font-size-h3: 20px;
+$font-size-p: 14px;
+$button-font-size: 14px;
+
+// Variables de tipografía
+$font-family: Arial, sans-serif;
+
+
+/* Estilos generales */
+body {
+    background-color: #59473C;
+    color: $color-white;
+    font-family: $font-family;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+
+//Clases de estilos generales
+.inline {
+    display: inline;
+}
+
+.sinDecoracion {
+    list-style: none;
+}
+
+.aSinDecoracion
+{
+    text-decoration: none;
+}
+
+.alignRight{
+    text-align: right;
+}
+
+/* Estilos para el encabezado */
+.header {
+    background-color: $color-header;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header .logo {
+    text-align: center;
+}
+
+.header .logo .logo-image {
+    width: 300px;
+    height: auto;
+}
+
+.header h1 {
+    color: $color-white;
+    font-size: 1.5rem;
+}
+
+.header nav {
+    display: flex;
+    justify-content: center;
+}
+
+.header nav ul {
+    list-style: none;
+    display: flex;
+    margin-top: 20px;
+}
+
+.header nav ul li {
+    margin-right: 20px;
+}
+
+.header nav ul li a {
+    color: $color-white;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.header nav ul li a:hover {
+    background-color: #BF967E;
+}
+
+.header nav ul li a.active {
+    background-color: #BF967E;
+    font-weight: bold;
+}
+
+/* Estilos para el contenido principal */
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+section h2 {
+    color: $color-header;
+    font-size: 1.25rem;
+}
+
+/*Carrousel*/
+.carousel-item img {
+    max-width: 100%;
+    max-height: 500px;
+    object-fit: cover;
+    object-position: center;
+}
+
+// Estilos para #productos
+#productos {
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.producto {
+    background-color: $color-bg;
+    color: $color-white;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+
+    .imagen-contenedor {
+    margin-bottom: 10px;
+    width: 100%;
+    height: 0;
+    padding-bottom: 100%;
+    position: relative;
+    overflow: hidden;
+    }
+
+    .imagen-producto {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    }
+
+    .contenido-producto {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+
+    h3 {
+        margin-top: 10px;
+        font-size: $font-size-h3;
+    }
+
+    p {
+        margin-bottom: 10px;
+    }
+
+
+
+    }
+
+    img {
+    max-width: 100%;
+    }
+}
+}
+
+//Estilos del carrito de compras//
+.carrito{
+    width: 30px;
+}
+
+#ElementosCarrito{
+    font-size: 22px;
+    color: white;
+}
+
+/* Estilos de los botones */
+.botonCarrito {
+display: flex;
+align-items: center;
+justify-content: center;
+margin-top: 20px;
+}
+
+.botonCarrito button {
+font-family: inherit;
+font-size: 13px;
+font-weight: 500;
+text-transform: uppercase;
+letter-spacing: 0.4px;
+color: #272929;
+background-color: #e0e8ef;
+border-style: solid;
+border-width: 2px 2px 2px 2px;
+border-color: rgba(255, 255, 255, 0.333);
+border-radius: 40px 40px 40px 40px;
+padding: 8px 18px;;
+transform: translate(0px, 0px) rotate(0deg);
+transition: 0.2s;
+}
+
+.botonCarrito button:hover {
+color: #0d0e0e;
+background-color: #E5EDF5;
+box-shadow: -2px -1px 8px 0px #ffffff, 2px 1px 8px 0px rgb(95 157 231 / 48%);
+}
+
+.botonCarrito button:active {
+box-shadow: none;
+}
+
+// Estilos para el banner
+.banner-container {
+    background-color: $color-bg;
+}
+
+.banner {
+    background-color: $color-header;
+    padding: 20px;
+    text-align: center;
+    font-family: $font-family;
+    color: $color-white;
+
+    i {
+        font-size: 50px; // Aumentar el tamaño de los iconos
+        margin-bottom: 10px;
+        &.custom-icon {
+            // Estilos adicionales para la clase custom-icon
+            color: $color-white;
+        }
+    }
+
+    h2 {
+        font-size: $font-size-h2;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+
+    p {
+        font-size: $font-size-p;
+        margin-bottom: 10px;
+    }
+}
+
+#nosotros {
+position: relative;
+text-align: center;
+padding: 40px;
+margin-bottom: 0;
+
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../imagenes/nosotros/imagendecoracion.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    opacity: 2; /* Nivel de transparencia */
+
+}
+
+.text-nosotros {
+    color: white;
+    position: relative;
+    z-index: 1; /* Texto por encima del fondo */
+    margin: 50px auto 0; /* Espacio entre la imagen y el texto, y centrado horizontal */
+    max-width: 1100px; /* Ancho máximo del texto */
+    padding: 0 10px; /* Espacio entre los bordes izquierdo y derecho */
+
+    h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: white;
+    }
+
+    p {
+    margin-bottom: 16px;
+    line-height: 1.5;
+    }
+}
+}
+
+
+/* Estilos para el footer */
+.footer-distributed {
+background: $color-header;
+box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+box-sizing: border-box;
+width: 100%;
+text-align: left;
+font: bold 16px sans-serif;
+padding: 55px 50px;
+
+.footer-left,
+.footer-center,
+.footer-right {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.footer-left {
+    width: 40%;
+
+    .logo {
+    .logo-image {
+        max-width: 120px; /* Ajusta el tamaño del logo según tus necesidades */
+        height: auto;
+    }
+    }
+}
+
+.footer-links {
+    color: $color-white;
+    margin: 20px 0 12px;
+    padding: 0;
+
+    a {
+    display: inline-block;
+    line-height: 1.8;
+    font-weight: 400;
+    text-decoration: none;
+    color: inherit;
+    }
+}
+
+.footer-company-name {
+    color:  #222;
+    font-size: $font-size-p;
+    font-weight: normal;
+    margin: 0;
+}
+
+.footer-center {
+    width: 35%;
+
+    i {
+    color: $color-white;
+    font-size: 25px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 42px;
+    margin: 10px 15px;
+    vertical-align: middle;
+
+    &.fa-envelope {
+        font-size: 17px;
+        line-height: 38px;
+    }
+    }
+
+    p {
+    display: inline-block;
+    color: $color-white;
+    font-weight: 400;
+    vertical-align: middle;
+    margin: 0;
+
+    span {
+        display: block;
+        font-weight: normal;
+        font-size: $font-size-p;
+        line-height: 2;
+    }
+
+    a {
+        color: lightseagreen;
+        text-decoration: none;
+    }
+    }
+
+    .footer-links a:before {
+    content: "|";
+    font-weight: 300;
+    font-size: 20px;
+    left: 0;
+    color: $color-white;
+    display: inline-block;
+    padding-right: 5px;
+    }
+
+    .footer-links .link-1:before {
+    content: none;
+    }
+}
+
+.footer-right {
+    width: 20%;
+
+    .footer-company-about {
+    line-height: 20px;
+    color: #92999f;
+    font-size: $font-size-p;
+    font-weight: normal;
+    margin: 0;
+
+    span {
+        display: block;
+        color: $color-white;
+        font-size: $font-size-p;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+    }
+
+    .footer-icons {
+    margin-top: 25px;
+
+    a {
+        display: inline-block;
+        width: 35px;
+        height: 35px;
+        cursor: pointer;
+        border-radius: 2px;
+        font-size: 20px;
+        color: $color-white;
+        text-align: center;
+        line-height: 35px;
+        margin-right: 3px;
+        margin-bottom: 5px;
+    }
+    }
+}
+
+
+
+/* Estilos responsivos */
+@media screen and (max-width: 768px) {
+    .header .logo .logo-image {
+        width: 200px;
+    }
+
+    .header h1 {
+        font-size: 16px;
+    }
+
+    .header nav ul li {
+        margin-right: 10px;
+    }
+
+    .header nav ul li a {
+        padding: 5px;
+        font-size: 12px;
+    }
+
+
+    aside h2 {
+        font-size: 16px;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+    .header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header .logo .logo-image {
+        width: 150px;
+    }
+
+    .header h1 {
+        font-size: 14px;
+        margin-top: 10px;
+    }
+
+    .header nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .header nav ul {
+        margin-top: 10px;
+    }
+
+    .header nav ul li {
+        margin-right: 5px;
+    }
+
+    .header nav ul li a {
+        padding: 3px;
+        font-size: 12px;
+    }
+
+
+
+    aside h2 {
+        font-size: 14px;
+    }
+
+
+}
+
+@media screen and (max-width: 320px) {
+    .header .logo .logo-image {
+        width: 120px;
+    }
+
+    .header h1 {
+        font-size: 12px;
+        margin-top: 5px;
+    }
+
+    .header nav ul li a {
+        padding: 2px;
+        font-size: 10px;
+    }
+
+    aside h2 {
+        font-size: 12px;
+    }
+
+
+
+
+}
+@media (max-width: 880px) {
+    .footer-distributed {
+    font: bold 14px sans-serif;
+    }
+
+    .footer-left,
+    .footer-center,
+    .footer-right {
+    display: block;
+    width: 100%;
+    margin-bottom: 40px;
+    text-align: center;
+    }
+
+    .footer-center i {
+    margin-left: 0;
+    }
+}
+}
+

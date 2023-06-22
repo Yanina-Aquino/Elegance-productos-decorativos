@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <!--Favicon AGREGAR-->
+    <link rel="shortcut icon" href="../imagenes/favicon.png" type="image/x-icon">
+    <!-- toastify -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!--Botstrap ICON-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <!--Titulo de la pagina-->
+    <title>Elegance - Productos de decoración</title>
+</head>
+
+<body>
+    <!-- LOGO- CARRITO DE COMPRAS-BOTONERA --->
+    <header class="header">
+        <div class="container">
+
+            <!--Icono carrito de compras-->
+        <div class="d-flex justify-content-end">
+            <a href="../paginas/carrito.html" class="aSinDecoracion">
+                <img src="../imagenes/carrito.png" class="carrito" alt="carrito">
+                <p id="ElementosCarrito" class="inline"></p>
+            </a>
+    </div>
+            <!-- logo--->
+            <div class="logo">
+                <img src="../imagenes/elegance-logo.png" alt="Logo de la tienda" class="logo-image">
+            </div>
+
+            <!-- Nav--->
+            <nav>
+                <div class="nav-container">
+                    <ul class="tab-bar">
+                        <li><a href="../index.html" class="active">Inicio</a></li>
+                        <li><a href="../index.html#productos">Productos</a></li>
+                        <li><a href="../index.html#nosotros">Nosotros</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+            </nav>
+            
+        </div>
+    </header>
+
+    <body>
+
+        <section id="carrito" class="text-center">
+            <h2>Carrito de compras</h2>
+            <ul id="lista-carrito" class="sinDecoracion">
+                <!-- Los productos seleccionados se agregarán aquí dinámicamente con JavaScript -->
+            </ul>
+
+            <p>Total del carrito: $<b id="totalCarrito"></b></p>
+            <p>IVA: $<b id="iva"></b></p>
+            <p>Total + IVA: $<b id="totalMasIva"></b></p>
+
+            <div class="botonCarrito">
+                <button id="vaciar-carrito" class="botonCarrito-1">Vaciar carrito</button>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer-distributed" id="contacto">
+            <div class="footer-left">
+                <div class="logo">
+                <img src="../imagenes/elegance-logo.png" alt="Logo de la tienda" class="logo-image">
+                </div>
+                <p class="footer-links">
+                <a href="#" class="link-1">Inicio |</a> 
+                <a href="#">Productos |</a>
+                <a href="#">Nosotros</a>
+                </p>
+            </div>
+    
+            <div class="footer-center">
+                <div>
+                <i class="bi bi-geo-alt"></i>
+                <p>Calle 105 - CABA</p>
+                </div>
+                <div>
+                <i class="bi bi-telephone"></i>
+                <p>+55 - 1587217627</p>
+                </div>
+                <div>
+                <i class="bi bi-envelope-at"></i>
+                <p><a href="mailto:support@company.com">support@company.com</a></p>
+                </div>
+            </div>
+    
+            <div class="footer-right ">
+                <div class="footer-icons">
+                <a href="#"><i class="bi bi-instagram"></i></a>
+                <a href="#"><i class="bi bi-whatsapp"></i></a>
+                </div>
+            </div>
+        </footer>
+        
+    <!--Bootstrap JavaScript-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <!-- Sweet Alert -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- Toastify -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="./carrito.js"></script>
+    </body>
+    </html>
